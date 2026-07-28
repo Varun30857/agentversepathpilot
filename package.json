@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "scripts": {
-    "dev": "npm run dev --prefix frontend",
-    "build": "npm run build --prefix frontend"
+    "dev": "npm run dev --prefix profile-intelligence-agent/frontend",
+    "build": "npm run build --prefix profile-intelligence-agent/frontend"
   }
 }
