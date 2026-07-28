@@ -1,0 +1,132 @@
+{
+  "candidate_name": "Alex Mercer",
+  "email": "alex.mercer@example.com",
+  "phone": "+1 (555) 234-5678",
+  "location": "San Francisco, CA",
+  "linkedin": "https://linkedin.com/in/alexmercer-dev",
+  "github": "https://github.com/alexmercer-dev",
+  "resume_score": 84,
+  "experience_years": 2,
+  "skills": [
+    "Python",
+    "JavaScript",
+    "React",
+    "FastAPI",
+    "SQL",
+    "Git",
+    "REST APIs",
+    "Tailwind CSS",
+    "Node.js",
+    "Docker",
+    "PostgreSQL",
+    "HTML5/CSS3"
+  ],
+  "technical_skills": [
+    "Python",
+    "JavaScript",
+    "React.js",
+    "FastAPI",
+    "Node.js",
+    "PostgreSQL",
+    "MongoDB",
+    "Docker",
+    "Git",
+    "REST APIs"
+  ],
+  "soft_skills": [
+    "Problem Solving",
+    "Technical Writing",
+    "Agile/Scrum",
+    "Team Collaboration"
+  ],
+  "programming_languages": ["Python", "JavaScript", "SQL", "TypeScript"],
+  "frameworks": ["React", "FastAPI", "Express.js", "Tailwind CSS"],
+  "tools": ["Git", "Docker", "VS Code", "Postman", "GitHub Actions"],
+  "databases": ["PostgreSQL", "MongoDB"],
+  "cloud_platforms": ["AWS (S3, EC2)"],
+  "projects": [
+    {
+      "name": "E-Commerce Microservices Platform",
+      "description": "Built a scalable microservices backend using FastAPI, Docker, and PostgreSQL with React dashboard frontend.",
+      "technologies": ["FastAPI", "Docker", "PostgreSQL", "React"],
+      "impact": "Handled 10,000+ daily mock requests with sub-100ms response latency."
+    },
+    {
+      "name": "AI Job Matcher Dashboard",
+      "description": "Created a full-stack React app that parses resumes and maps skills against open job postings.",
+      "technologies": ["React", "Node.js", "Tailwind CSS", "Groq API"],
+      "impact": "Reduced manual resume review time by 60% during user testing."
+    }
+  ],
+  "education": [
+    {
+      "degree": "B.S. in Computer Science",
+      "institution": "University of California, Berkeley",
+      "year": "2024",
+      "gpa": "3.8/4.0"
+    }
+  ],
+  "experience": [
+    {
+      "role": "Software Engineering Intern",
+      "company": "TechStart Innovations",
+      "duration": "Jun 2023 – Dec 2023",
+      "description": "Developed RESTful APIs in FastAPI, optimized SQL query performance by 35%, and collaborated in 2-week Agile sprints."
+    }
+  ],
+  "certifications": [
+    "AWS Certified Cloud Practitioner",
+    "Meta Front-End Developer Specialization"
+  ],
+  "achievements": [
+    "1st Place Winner — HackCal 2023 Hackathon",
+    "Dean's Honor List (2021-2024)"
+  ],
+  "strengths": [
+    "Strong full-stack foundations with Python (FastAPI) and React.js",
+    "Hands-on experience with containerization (Docker) and REST API design",
+    "Proven track record of project completion and hackathon success"
+  ],
+  "weaknesses": [
+    "Limited experience with Kubernetes and advanced cloud orchestration",
+    "Lack of automated test coverage (PyTest/Jest) mentioned in project details",
+    "System Design architecture experience is at entry level"
+  ],
+  "skill_gaps": [
+    "Kubernetes",
+    "System Design",
+    "CI/CD Pipelines",
+    "GraphQL",
+    "Redis Caching"
+  ],
+  "improvement_suggestions": [
+    "Add unit tests using PyTest/Jest to your GitHub project repositories",
+    "Include a concise 2-sentence professional summary at the very top of your resume",
+    "Build a project demonstrating Redis caching to showcase backend optimization",
+    "Practice System Design fundamentals for mid-level software engineering interviews",
+    "Deploy one of your projects using Kubernetes on AWS EKS or GKE"
+  ],
+  "career_readiness": {
+    "software_developer": 85,
+    "full_stack_developer": 82,
+    "ai_engineer": 65,
+    "data_scientist": 50,
+    "devops_engineer": 45
+  },
+  "learning_roadmap": [
+    {
+      "priority": 1,
+      "skill": "System Design Fundamentals",
+      "reason": "Crucial for passing mid-level software engineer technical rounds",
+      "resources": ["ByteByteGo", "Grokking System Design Interview"],
+      "estimated_time": "3-4 weeks"
+    },
+    {
+      "priority": 2,
+      "skill": "Kubernetes & Orchestration",
+      "reason": "Expands your Docker knowledge into production infrastructure management",
+      "resources": ["Kubernetes Documentation", "Mumshad Mannambeth CKA Course"],
+      "estimated_time": "3-4 weeks"
+    }
+  ]
+}

@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { Upload, FileText, X, CheckCircle, CloudUpload, Loader2, Sparkles } from 'lucide-react'
 import toast from 'react-hot-toast'
 import axios from 'axios'
-import sampleData from '../../../sample_resume_data.json'
+import sampleData from '../data/sample_resume_data.json'
 
 export default function UploadSection({ darkMode, onUploadStart, onAnalysisComplete }) {
   const [file, setFile] = useState(null)
