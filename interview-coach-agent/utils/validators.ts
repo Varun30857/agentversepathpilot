@@ -13,7 +13,7 @@ import { InterviewConfig } from '@/types/interview';
 export function validateInterviewConfig(config: any): config is InterviewConfig {
   if (!config || typeof config !== 'object') return false;
 
-  const { role, company, difficulty } = config;
+  const { role, company, difficulty, questionCount } = config;
 
   if (typeof role !== 'string' || !role.trim()) return false;
   if (typeof company !== 'string' || !company.trim()) return false;
@@ -26,6 +26,15 @@ export function validateInterviewConfig(config: any): config is InterviewConfig 
   ) {
     return false;
   }
+
+  // Validate questionCount if provided
+  if (
+    questionCount !== undefined &&
+    (typeof questionCount !== 'number' || ![5, 6, 8, 10, 12, 15].includes(questionCount))
+  ) {
+    return false;
+  }
+
   return true;
 }
 

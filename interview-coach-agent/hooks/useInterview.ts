@@ -15,10 +15,12 @@ export function useInterview() {
     userMessage: string,
     company: string,
     role: string,
-    difficulty: string
+    difficulty: string,
+    questionCount: number,
+    clearHistory: boolean = false
   ) {
     const updated: Message[] = [
-      ...messages,
+      ...(clearHistory ? [] : messages),
       {
         role: "user",
         content: userMessage,
@@ -38,6 +40,7 @@ export function useInterview() {
             company,
             role,
             difficulty,
+            questionCount,
           },
           messages: updated,
           isCompleted: false,
@@ -56,7 +59,7 @@ export function useInterview() {
       console.log("HTTP Status:", res.status);
 
       setMessages((prev) => [
-        ...prev,
+        ...(clearHistory ? [] : prev),
         {
           role: "assistant",
           content: response.content,
@@ -69,9 +72,14 @@ export function useInterview() {
     }
   }
 
+  function resetInterview() {
+    setMessages([]);
+  }
+
   return {
     messages,
     loading,
     sendMessage,
+    resetInterview,
   };
 }

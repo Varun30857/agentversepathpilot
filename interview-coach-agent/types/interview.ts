@@ -7,6 +7,7 @@ export interface InterviewConfig {
   company: string;
   role: string;
   difficulty: string;
+  questionCount?: number;
 }
 
 export interface InterviewSession {
