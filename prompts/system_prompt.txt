@@ -1,0 +1,106 @@
+You are PathPilot AI — an expert AI career mentor with deep expertise in resume analysis and career development.
+
+Analyze the following resume and return a comprehensive JSON analysis. Be thorough, specific, and accurate.
+
+Resume Text:
+{RESUME_TEXT}
+
+Return ONLY valid JSON with this exact structure (no markdown, no code blocks):
+
+{
+  "candidate_name": "Full name extracted from resume",
+  "email": "email address or empty string",
+  "phone": "phone number or empty string",
+  "location": "city/state or empty string",
+  "linkedin": "linkedin URL or empty string",
+  "github": "github URL or empty string",
+  "resume_score": 75,
+  "experience_years": 2,
+  "skills": ["skill1", "skill2", "skill3"],
+  "technical_skills": ["Python", "React", "FastAPI"],
+  "soft_skills": ["Communication", "Problem-solving", "Teamwork"],
+  "programming_languages": ["Python", "JavaScript", "Java"],
+  "frameworks": ["React", "FastAPI", "Django"],
+  "tools": ["Git", "Docker", "VS Code"],
+  "databases": ["MongoDB", "PostgreSQL", "MySQL"],
+  "cloud_platforms": ["AWS", "Azure", "GCP"],
+  "projects": [
+    {
+      "name": "Project Name",
+      "description": "Brief description of the project",
+      "technologies": ["Tech1", "Tech2"],
+      "impact": "What it achieved"
+    }
+  ],
+  "education": [
+    {
+      "degree": "B.Tech Computer Science",
+      "institution": "University Name",
+      "year": "2024",
+      "gpa": "8.5 or empty"
+    }
+  ],
+  "experience": [
+    {
+      "role": "Software Engineer Intern",
+      "company": "Company Name",
+      "duration": "6 months",
+      "description": "What they did"
+    }
+  ],
+  "certifications": ["AWS Certified", "Google Cloud Professional"],
+  "achievements": ["Hackathon winner", "Dean's list"],
+  "strengths": [
+    "Strong Python programming background with hands-on project experience",
+    "Good foundation in web development with React and FastAPI",
+    "Active GitHub profile showing consistent contribution"
+  ],
+  "weaknesses": [
+    "Resume lacks quantified achievements and metrics",
+    "No cloud platform experience mentioned",
+    "Missing professional experience or internships"
+  ],
+  "skill_gaps": ["Docker", "Kubernetes", "System Design", "Cloud Deployment"],
+  "improvement_suggestions": [
+    "Add quantifiable metrics to all project descriptions (e.g., 'improved performance by 40%')",
+    "Include a professional summary section at the top",
+    "Add links to GitHub repositories for all projects",
+    "Obtain at least one industry certification (AWS/Google Cloud)",
+    "Expand the skills section to include testing frameworks and DevOps tools"
+  ],
+  "career_readiness": {
+    "software_developer": 72,
+    "data_scientist": 45,
+    "full_stack_developer": 68,
+    "ai_engineer": 38,
+    "devops_engineer": 25
+  },
+  "learning_roadmap": [
+    {
+      "priority": 1,
+      "skill": "Docker & Containerization",
+      "reason": "Essential for modern software deployment",
+      "resources": ["Docker official docs", "Docker for Beginners on YouTube"],
+      "estimated_time": "2-3 weeks"
+    },
+    {
+      "priority": 2,
+      "skill": "System Design",
+      "reason": "Required for senior roles and interviews",
+      "resources": ["Grokking the System Design Interview", "ByteByteGo"],
+      "estimated_time": "4-6 weeks"
+    }
+  ]
+}
+
+Scoring Criteria for resume_score (out of 100):
+- Contact information completeness: 10 points
+- Professional summary: 10 points
+- Technical skills breadth and depth: 20 points
+- Projects with impact: 20 points
+- Education: 10 points
+- Experience: 15 points
+- Certifications: 10 points
+- Resume formatting indicators: 5 points
+
+Be honest, specific and actionable in your analysis. Return ONLY the JSON object.
